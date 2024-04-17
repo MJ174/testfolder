@@ -4,13 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>웹프로그래밍 데모</title>
+    <title>자기소개</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/dropdowns/"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"
+    />
   </head>
   <body>
     <nav class="navbar">
       <div class="container">
-        <div class="logo">WebDemo</div>
+        <div class="logo">Portfolio</div>
         <ul class="nav">
           <li>
             <a href="index.html">Home</a>
@@ -24,67 +33,112 @@
           <li>
             <a href="Form Test.html">Form Test</a>
           </li>
+          <li>
+            <a href="webproject.html">WebProgramming</a>
+          </li>
         </ul>
       </div>
     </nav>
 
     <!--메인 섹션-->
-    <section class="main">
-      <div class="container">
-        <h1>웹프로그래밍. Web Programming.</h1>
+    <main>
+      <section class="title-section">
+        <img
+          src="/portfolio1/img/title.jpg"
+          alt="Title Image"
+          id="title-image"
+        />
+        <h1>"Together"</h1>
+        <p>It makes everything possible</p>
+      </section>
 
-        <h3>
-          웹 개발자를 위한 온라인 매뉴얼:
-          <a href="https://www.w3schools.com/"
-            >W3Schools: 웹프로그래밍 매뉴얼</a
-          >
-        </h3>
+      <section class="profile-section">
+        <figure>
+          <img src="/portfolio1/img/profile.jpg" alt="me" />
+        </figure>
 
-        <p>
-          웹프로그래밍의 3가지 요소:
-          <a href="https://www.w3schools.com/html/default.asp">HTML5</a> |
-          <a href="https://www.w3schools.com/css/default.asp">CSS3</a> |
-          <a href="https://www.w3schools.com/js/default.asp">Javascript</a>
-        </p>
+        <div id="vline"></div>
 
-        <p>현재시간: <span id="time"></span></p>
-        <img src="/portfolio1/img/welcome.jpg" alt="mountine" width="300" />
-        <hr />
-        <p>
-          배경색 바꾸기:
-          <button onclick="pink()">Pink</button>
-          <button onclick="lightblue()">Lightblue</button>
-          <button onclick="yellow()">Yellow</button>
-          <button onclick="reset()">Reset</button>
-        </p>
-        <p>
-          배워봅시다:
-          <button onmouseover="showhtml()" onmouseout="hide()">HTML5</button>
-          <button onmouseover="showcss()" onmouseout="hide()">CSS3</button>
-          <button onmouseover="showjs()" onmouseout="hide()">Javascript</button>
-        </p>
-        <hr />
-        <br />
-        <div>
-          <img id="fig" height="200px" />
-          <p id="desc"></p>
-        </div>
-        <footer>
-          <nav>
-            <a href="https://www.instagram.com/myeongjins_/" target="_blank"
-              >Instagram</a
+        <article class="info-content">
+          <div><strong>이름</strong> : 신명진</div>
+          <div>
+            장점<br />1.근본적인 원인파악에 능합니다. <br />2.즉흥적인 편입니다.
+            <br />3.상황파악이 빠른편입니다.
+          </div>
+          <div><strong>성격</strong> : 생각이 많은편</div>
+          <div><strong>협업 스타일</strong>: 리더 및 신중함</div>
+          <div>
+            <img
+              src="/portfolio1/icons/git.png"
+              alt="GitHub"
+              class="icon"
+            />Github :
+            <a href="https://github.com/MJ174?tab=repositories" target="_blank"
+              >MJ00</a
             >
-            <a href="https://github.com/MJ174" target="_blank">Github</a>
-          </nav>
-          <p>
-            <span>저자 : MJ</span><br />
-            <span>이메일 : audwls714@gmail.com</span><br />
-            <span>Copyright 2024. MJ. All Rights Reserved.</span>
-          </p>
-        </footer>
-      </div>
-    </section>
+          </div>
+          <div>
+            <img
+              src="/portfolio1/icons/velog.png"
+              alt="vleog"
+              class="icon"
+            />Blog :
+            <a href="https://blog.naver.com/audwls714" target="_blank"
+              >https://blog.naver.com/audwls714</a
+            >
+          </div>
+          <div>
+            <img
+              src="/portfolio1/icons/insta.svg"
+              alt="instagram"
+              class="icon"
+            />instagram :
+            <a href="https://www.instagram.com/myeongjins_/" target="_blank"
+              >명진</a
+            >
+          </div>
+          <span id="icons">
+            <h4><strong>취미</strong> :</h4>
+            <img src="/portfolio1/icons/hobby.png" />
+            <img src="/portfolio1/icons/listening.png" />
+            <img src="/portfolio1/icons/movie.png" />
+            <img src="/portfolio1/icons/psgame.png" />
+          </span>
+        </article>
+
+        <div id="vline"></div>
+
+        <div class="mbti-container">
+          <div id="mbti-text">MBTI</div>
+          <img src="/portfolio1/img/MBTI.png" id="mbti-image" />
+        </div>
+      </section>
+
+      <section class="favorites">
+        <h2 class="line">My Favorite Things</h2>
+        <div class="images">
+          <span id="">
+            <img src="/portfolio1/img/cat.jpg" />
+          </span>
+          <span id="">
+            <img src="/portfolio1/img/busan.jpg" />
+          </span>
+          <span id="">
+            <img src="/portfolio1/img/travel.png" />
+          </span>
+          <span id="">
+            <img src="/portfolio1/img/music.jpg" />
+          </span>
+          <span id="">
+            <img src="/portfolio1/img/bike.jpg" />
+          </span>
+        </div>
+      </section>
+      <link rel="stylesheet" href="yullstyle.css" />
+    </main>
+    <div class="container"></div>
 
     <script src="main.js"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
